@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Token Minter dApp</title>
-     <link
-      rel="icon"
-      type="image/x-icon"
-      href="/media/images/photo_2024-03-11_18-04-00.jpg"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Token Minter dApp</title>
+    <link rel="icon" type="image/x-icon" href="/media/images/photo_2024-03-11_18-04-00.jpg"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/globalstyles.css" />
   </head>
 
- <body>
-     <!-- Header Section -->
-     <header>
-       <h1>Welcome to our Token Minter dApp</h1>
-       <nav>
-         <ul>
-           <li><a href="#home">Home</a></li>
-           <li><a href="#mint">Mint Tokens</a></li>
-           <li><a href="#about">About</a></li>
-         </ul>
-       </nav>
-      </header>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-primary text-white py-3">
+      <div class="container">
+        <h1 class="text-center">Welcome to our Token Minter dApp</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mint">Mint Tokens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-         <!-- Main Content Section -->
-     <main>
-       <article id="home">
-         <h2>Introduction to Token Minting</h2>
-         <p>
+    <!-- Main Content Section -->
+    <main class="container my-5">
+
+      <!-- Home Section -->
+      <article id="home" class="mb-5">
+        <h2>Introduction to Token Minting</h2>
+        <p>
           This dApp allows users to mint their own tokens on the blockchain.
-         </p>
-       </article>
+        </p>
+      </article>
 
-          <!-- Mint Section -->
-       <section id="mint">
-          <h2>Mint Your Tokens Here</h2>
-         <form action="#">
-           <input type="email" placeholder="Enter your email" />
-           <input type="text" placeholder="Token ID" />
-           <input type="number" placeholder="Token amount" />
-           <button type="submit">Mint</button>
-         </form>
-       </section>
+      <!-- Mint Section -->
+      <section id="mint" class="mb-5">
+        <h2>Mint Your Tokens Here</h2>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Enter your email" required/>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Token ID" required/>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" placeholder="Token amount" required/>
+          </div>
+          <button type="submit" class="btn btn-primary">Mint</button>
+        </form>
+      </section>
 
-        <section id="about">
-            <h2>About</h2>
-          <p> Learn more about our dApp, its purposes and how it works.</p>
-        </section>
+      <!-- About Section -->
+      <section id="about" class="mb-5">
+        <h2>About</h2>
+        <p>Learn more about our dApp, its purposes and how it works.</p>
+      </section>
 
-        <aside>
-          <h3>Learn More:</h3>
-          <p>Explore more about blockchain technology.</p>
-        </aside>
-     </main>
-              <!-- Footer Section -->
-     <footer>
-      <p>
-        Contact us at
-        <a href="mailto:hello@dProgrammingUniversity.com">hello@dProgrammingUniversity.com</a>
-     </p>
-     <p> Built by AdeyanjuPharm</p>
-     </footer>
+      <!-- Aside Section -->
+      <aside class="bg-light p-3 rounded">
+        <h3>Learn More:</h3>
+        <p>Explore more about blockchain technology.</p>
+      </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg">
+      <div class="container text-center">
+        <p>
+          Contact us at
+          <a href="mailto:hello@dProgrammingUniversity.com" class="text-white">hello@dProgrammingUniversity.com</a>
+        </p>
+        <p>Built by AdeyanjuPharm</p>
+      </div>
+    </footer>
   </body>
 </html>
