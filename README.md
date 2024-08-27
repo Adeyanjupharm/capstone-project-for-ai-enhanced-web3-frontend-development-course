@@ -17,5 +17,3 @@ I learnt about CSS syntax, selectors, specificity, libraries, etc and how to use
 Learning JavaScript was quite an interesting journey and I had to take my time learning it. I learnt how it interacts with html and css. I also learnt how to incorporate API and graphql into my dapp. No major challenge as it were.
 
 SCREENSHOTS OF SERVER, FRONTEND AND WORKSPACE
-
-https://github.com/Adeyanjupharm/capstone-project-for-ai-enhanced-web3-frontend-development-course/blob/project-section3to6-js-api-graphql/media/images/webpage%20screenshot.png
