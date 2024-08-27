@@ -13,3 +13,5 @@ Taking the HTML course section of the 100 days bootcamp was a smooth, fun and en
 ### SECTION 2
 I learnt about CSS syntax, selectors, specificity, libraries, etc and how to use AI to generate and modify css codes. The major challenge was how to customize and override the default bootstrap css code but that was solved by targeting the class of the html to be styled instead of the element.
 
+
+
