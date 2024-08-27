@@ -15,8 +15,3 @@ I learnt about CSS syntax, selectors, specificity, libraries, etc and how to use
 
 ### SECTION 3 - 6
 Learning JavaScript was quite an interesting journey and I had to take my time learning it. I learnt how it interacts with html and css. I also learnt how to incorporate API and graphql into my dapp. No major challenge as it were.
-
-SCREENSHOTS OF SERVER, FRONTEND AND WORKSPACE
-- ![GitHub Remote URL](/media/images/apollo%20server%20screenshot.png)
-- ![GitHub Remote URL](/media/images/webpage%20screenshot.png)
-- ![GitHub Remote URL](/media/images/Screenshot%20from%202024-08-27%2015-39-12.png)
