@@ -10,7 +10,10 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="/globalstyles.css" />
+    <link rel="stylesheet" href="/globalstyles.css"/>
+
+    <!-- Link to external CSS file -->
+    <script src="/globalscript.js"></script>
   </head>
 
   <body>
@@ -50,19 +53,30 @@
       <!-- Mint Section -->
       <section id="mint" class="mb-5">
         <h2>Mint Your Tokens Here</h2>
+          <p id="totalMinted">Total Minted: 0</p>
+           
+          <!-- Token minting form section -->
+          <form action="#">
         <form>
           <div class="form-group">
-            <input type="email" class="form-control" placeholder="Enter your email" required/>
+            <input type="text" class="form-control" placeholder="ERC-20 Wallet Address" required id="walletAddress"/>
           </div>
+          
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Token ID" required/>
-          </div>
-          <div class="form-group">
-            <input type="number" class="form-control" placeholder="Token amount" required/>
+            <input type="number" class="form-control" placeholder="Token Amount" required id="tokenAmount"/>
           </div>
           <button type="submit" class="btn btn-primary">Mint</button>
         </form>
       </section>
+      <!-- Display minting status -->
+      <p id="mintStatus" class="animate-status">Ready to mint tokens.</p>
+
+    </section>
+
+    <section id="cryptoPrices">
+        <!-- Prices will be updated here by the JavaScript code -->
+        <h2>Retrieving Crypto prices...</h2>
+    </section>    
 
       <!-- About Section -->
       <section id="about" class="mb-5">

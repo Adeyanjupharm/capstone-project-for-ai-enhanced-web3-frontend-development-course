@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
 }
 
 .container {
@@ -21,6 +22,7 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 3rem;
 }
 
 nav ul {
@@ -39,6 +41,7 @@ nav ul li a {
   color: white !important;
   text-decoration: none;
   padding: 5px 10px;
+  font-size: 1.2rem;
 }
 
 nav ul li a:hover {
@@ -48,7 +51,10 @@ nav ul li a:hover {
 
 /* Main Content Styles */
 main {
-  padding: 20px 0;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 article,
@@ -62,6 +68,14 @@ section h2,
 aside h3 {
   border-bottom: 2px solid #007bff;
   padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+article p,
+section p,
+aside p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 form {
@@ -79,24 +93,74 @@ form {
 
 .form-group input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
 button {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 5px;
   cursor: pointer;
   display: block;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* Minting Status Styles */
+#mintStatus {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #257ed1;
+  text-align: center;
+}
+  
+  /* Minting Status Animation Styles */
+.animate-status {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Mint Status Section */
+#totalMinted { 
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #257ed1;
+  text-align: center;
+}
+
+/* Crypto Prices Section */
+#cryptoPrices {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#cryptoPrices h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 20px;
 }
 
 /* Footer Styles */
@@ -114,11 +178,12 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-} 
+}
 
 .bg {
   background-color: #007bff;
   color: white;
   padding: 20px 0;
   text-align: center;
+  margin-bottom: 0;
 }
